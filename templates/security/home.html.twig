@@ -1,0 +1,10 @@
+{% extends "base.html.twig" %} 
+{% block body %}
+<h1>Home Page</h1>
+
+{% if app.user %}
+<div class="checkbox mb-3">You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
+{% endif %}
+
+
+{% endblock %}
